@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintTop_toBottomOf="parent"
+    app:layout_constraintBottom_toTopOf="parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/firstn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_margin="50dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+        <EditText
+            android:id="@+id/secondn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="145dp" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:onClick="add"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="238dp" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtract"
+        android:onClick="sub"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="314dp" />
+
+        <Button
+            android:id="@+id/multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="multiply"
+            android:text="Multiply"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="388dp" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divide"
+        android:onClick="divide"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="463dp" />
+
+    <EditText
+        android:id="@+id/thirdn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Total Value: "
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="553dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
